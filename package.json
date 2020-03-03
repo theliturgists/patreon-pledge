@@ -1,6 +1,6 @@
 {
   "name": "@theliturgists/patreon-pledge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Small library for determining rewards based on Patreon pledge level.",
   "main": "dist/index.js",
   "scripts": {
