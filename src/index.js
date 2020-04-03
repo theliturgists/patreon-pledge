@@ -8,7 +8,7 @@ const OLD_TIER_REWARD_IDS = {
 };
 
 const NEW_TIER_REWARD_IDS = {
-  BE_A_LITURIST: '3956585',
+  BE_A_LITURGIST: '3956585',
   GROW_WITH_US: '3956587',
   TALK_WITH_US: '3956589',
   ON_THE_GUEST_LIST: '3956592',
@@ -73,12 +73,14 @@ export default class Pledge {
 
   canAccessMeditations() {
     if (this._isOldTierPledge()) {
-      const minOldMeditationsPledge = 500;
+      // const minOldMeditationsPledge = 500;
+      const minOldMeditationsPledge = 100;
       return this.pledge.amount_cents >= minOldMeditationsPledge;
     }
 
     if (this._isNewTierPledge()) {
-      const minNewMeditationsPledge = 1000;
+      // const minNewMeditationsPledge = 1000;
+      const minNewMeditationsPledge = 300;
       return this.pledge.amount_cents >= minNewMeditationsPledge;
     }
 
